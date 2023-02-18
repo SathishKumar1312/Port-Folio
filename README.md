@@ -1,3 +1,3 @@
-# Port-Folio
+# Portfolio
 
-https://sathishkumar1312.github.io/Port-Folio/
+https://sathishkumar1312.github.io/Portfolio/
