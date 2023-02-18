@@ -1,0 +1,218 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#toplink {
+    border: 0 solid;
+    background-color: black;
+    height: 50px;
+    padding-top: 15px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+
+}
+
+label.logo {
+    color: whitesmoke;
+    font-size: 25px;
+    font-variant: small-caps;
+    padding: 0 25px;
+}
+#toplink ul{
+    float: right;
+}
+#toplink li {
+    display: inline-block;
+    padding: 8px 10px 0px;
+    list-style-type: none;
+}
+#toplink li a {
+    color: aliceblue;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 0%;
+}
+.checkbtn {
+    color: blueviolet;
+    float: right;
+    padding-top: 8px;
+    padding-right: 15px;
+    cursor: pointer;
+}
+#check {
+    display: none;
+}
+#toplink div {
+    clear: both;
+}
+
+@media (min-width:850px){
+    .checkbtn{
+        display: none;
+    }
+    #toplink li a:hover {
+        color: violet;
+        font-family: sans-serif;
+    }
+}
+@media (max-width:849px) {
+    #above{
+        display: flex;
+        flex-direction:column;
+        padding-top: 50px;
+    }
+    #above img {
+        padding-top: 25px;
+        z-index: 1;
+        margin: auto;
+    }
+    #toplink ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        left: -100%;
+        background: lightblue;
+        top: 60px;
+        text-align: center;
+        transition: all .5s;
+    }
+    .checkbtn{
+        padding: 6px 32px 0px 0px;
+        font-size: 20px;
+    }
+    #toplink li{
+        display: block;
+        padding: 20px;
+    }
+    #toplink li a{
+        color:black;
+        font-size: 30px;
+    }
+    #toplink li a:hover{
+        font-family:sans-serif;
+    }
+    #check:checked ~ .navul{
+        left: 0;
+    } 
+    #check:hover ~ .navul{
+        left: 0;
+    } 
+
+    .xp {
+        display: flex;
+        flex-direction: column;
+        padding-top: 50px;
+    }
+    .xp h2 {
+        text-align: center;
+    }
+}
+
+#pot{
+    margin-top: 50px;
+}
+#above{
+    background-image: url("images/boat.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+#info{
+    animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+     }
+}
+#info h1{
+    color: black;
+    font-size: 45px;
+}
+
+#info p{
+    font-size: 25px;
+    margin-top: 2%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: azure;
+}
+#above img {
+    float: left;
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    margin-left: 5%;
+    
+}
+.xp {
+    background-image: url("images/div2.jpg");
+    opacity: 0.9;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 90vh;
+    display: flex;
+}
+.xp h2{
+    color: whitesmoke;
+    padding: 15px 0px 0px 30px;
+
+}
+#journey {
+    font-size: 18px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    justify-content: center;
+    color: aliceblue;
+}
+#journey p{
+    padding: 10px;
+}
+
+#foot {
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    color: aliceblue;
+}
+#socmedia img {
+    float: left;
+    margin-left: 37%;
+}
+#socmedia h2 {
+    float:left;
+    text-align: center;
+}
+#foot li{
+    list-style-type: none;
+    padding: 7px;
+    clear: both;
+}
+
+#foot li img {
+    float: left;
+    justify-content: center;
+}
+#foot li a {
+    text-decoration: none;
+    color :aliceblue;
+    font-size: 25px;
+}
