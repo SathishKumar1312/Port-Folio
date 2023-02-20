@@ -230,7 +230,7 @@ label.logo {
         z-index: 1;
         margin: auto;
         height: 370px;
-        width: 370px;
+        width: 340px;
     }
     #toplink ul {
         position: fixed;
@@ -289,7 +289,7 @@ label.logo {
     .toflex {
         display: flex;
         flex-direction: column;
-        margin-left: -40px;
         font-size: 19px;
+        margin-left: -50px;
     }
 }
